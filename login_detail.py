@@ -89,7 +89,7 @@ def gconnect():
     params = {'access_token': credentials.access_token, 'alt': 'json'}
     answer = requests.get(userinfo_url, params=params)
 
-    data = answer.json()
+    data = answer.json
 
     login_session['username'] = data['name']
     login_session['picture'] = data['picture']
